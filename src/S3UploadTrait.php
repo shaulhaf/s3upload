@@ -15,7 +15,7 @@ trait S3uploadTrait
 
 	public function setAttribute($key, $value)
 	{
-		if (!in_array($key, $this->s3uploads)) {
+		if (!in_array($key, $this->s3uploads ?? [])) {
 			return parent::setAttribute($key, $value);
 		}
 
