@@ -8,7 +8,7 @@
                             <span class="label">
                                 {{name}}
                             </span>
-                            <a class="delete ml-2" @click="delete_image">
+                            <a class="delete ml-2" @click="delete_image" v-if="!field.readonly">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" aria-labelledby="delete" role="presentation" class="fill-current"><path fill-rule="nonzero" d="M6 4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2h5a1 1 0 0 1 0 2h-1v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6H1a1 1 0 1 1 0-2h5zM4 6v12h12V6H4zm8-2V2H8v2h4zM8 8a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1zm4 0a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z"></path></svg>
                             </a>
                         </div>
@@ -17,7 +17,7 @@
             </div>
             <div v-if="this.uploadProgress > 0 && !this.deleted" :style="`width:${this.uploadProgress}%;`" style="height:12px;background:var(--primary);border-radius:100px;"></div>
             <div v-if="this.uploadProgress > 0 && !this.deleted" style="position:relative;top:-12px;font-size:12px;" :style="`left:calc(${this.uploadProgress}% + 5px;`">{{this.uploadProgress}}%</div>
-            <div class="custom-file">
+            <div class="custom-file" v-if="!field.readonly">
                 <label for="file" class="form-file-btn btn btn-default btn-primary">
                     {{field.value ? 'Replace File' : 'Upload File'}}
                 </label>
