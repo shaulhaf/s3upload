@@ -1,6 +1,6 @@
 <?php
 
-namespace Capitalc\S3Upload;
+namespace Shaulhaf\S3Upload;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;

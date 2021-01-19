@@ -1,6 +1,6 @@
 <?php
 
-namespace Capitalc\S3Upload;
+namespace Shaulhaf\S3Upload;
 
 use Laravel\Nova\Fields\Field;
 

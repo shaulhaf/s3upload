@@ -1,6 +1,6 @@
 <?php
 
-namespace Capitalc\S3Upload;
+namespace Shaulhaf\S3Upload;
 
 trait S3uploadTrait
 {
