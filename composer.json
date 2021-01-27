@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Shaulhaf\\S3Upload\\": "src/"
+            "Shaulhaf\\S3upload\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Shaulhaf\\S3Upload\\FieldServiceProvider"
+                "Shaulhaf\\S3upload\\FieldServiceProvider"
             ]
         }
     },
