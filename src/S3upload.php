@@ -1,10 +1,10 @@
 <?php
 
-namespace Shaulhaf\S3upload;
+namespace Shaulhaf\S3Upload;
 
 use Laravel\Nova\Fields\Field;
 
-class S3upload extends Field
+class S3Upload extends Field
 {
     /**
      * The field's component.
